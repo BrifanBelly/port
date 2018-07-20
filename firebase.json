@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "../startbootstrap-grayscale-gh-pages",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
