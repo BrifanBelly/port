@@ -22,7 +22,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
-
   </head>
 
   <body id="page-top">
@@ -49,6 +48,9 @@
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio <span class="fa fa-window-restore"></span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills <span class="fa fa-book"></span></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact <span class="fa fa-universal-access"></span></a>
             </li>
           </ul>
@@ -61,7 +63,10 @@
       <div class="intro-body">
         <div class="container">
           <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12"> <img src="img/myself.jpg" alt="Myself" class="my-self" /></div>            
+            <div class="col-lg-4 col-md-4 col-sm-12"> 
+              <img src="img/myself.jpg" alt="Myself" class="my-self" />
+              <img src="img/transparent.png" alt="Myself" class="my-self--overlay" />
+            </div>            
             <div class="col-lg-8 col-md-8 col-sm-12">
               <h3 class="brand-heading">Bonjur!</h3>
               <p class="intro-text"><span class="fa fa-quote-left"></span>
@@ -81,21 +86,22 @@
     <!-- About Section -->
     <section id="about" class="content-section text-center">
       <div  class="container">
-        <div class="row">
+        <div class="row animation-element bounce-up">
           <div class="col-lg-8 mx-auto">
             <h2 class="text animated bounce">About Me</h2>
-            <p>An ambitious problem solver with a passion for online businesses, and who would
-              like to join a team of like-minded developers. Who has much experience of
-              creating logical and innovative solutions to complex problems. 
-              
-              <p>He is thorough and precise in everything He does, and has a keen interest in technology, mobile
-              applications and user experience. As someone who takes responsibility for his own
-              personal development, He is continually evaluating and upgrading his skills so that</p>
-              <p>
-               He stays at the cutting edge of web development. Brifan is a natural problem solver,
-               has proven himself by successfully completing projects for IT consultancies,
-              software houses, web design agencies, and IT departments.</p>
-          
+            <div class="subject">
+              <p>An ambitious problem solver with a passion for online businesses, and who would
+                like to join a team of like-minded developers. Who has much experience of
+                creating logical and innovative solutions to complex problems. 
+                
+                <p>He is thorough and precise in everything He does, and has a keen interest in technology, mobile
+                applications and user experience. As someone who takes responsibility for his own
+                personal development, He is continually evaluating and upgrading his skills so that</p>
+                <p>
+                 He stays at the cutting edge of web development. Brifan is a natural problem solver,
+                 has proven himself by successfully completing projects for IT consultancies,
+                software houses, web design agencies, and IT departments.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -109,71 +115,211 @@
           <h2 class="mb-5">Recent Projects</h2>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://shrouded-tor-56171.herokuapp.com/" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Movies Api</h2>
-                  <p class="mb-0">An AngularJS Project consumes theMoviedb Api</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/movies.jpg" alt="">
-            </a>
+            <div class="col-lg-6 animation-element slide-left" data-toggle="modal" data-id="d3" data-target="#myModal">
+                <div class="portfolio-item">
+                  <figure class="project-excerpt-image">
+                    <img class="img-fluid" src="img/d3.jpg" alt="image1" class="excerpt-image">
+                  </figure>
+    
+                  <div class="project-excerpt-caption">
+                    <div class="project-excerpt-caption-inner">
+                        <div class="project-excerpt-title">
+                            <h3 class="project-excerpt-title-inner">Data Visualization</h3>
+                        </div>
+                        <div class="tags project-excerpt-tags"><span class="project-excerpt-tags-inner">Bubble chart for sorting data with cool animation effects</span></div>
+                    </div>
+                </div>
+              </div>
+              </div>
+          <div class="col-lg-6 animation-element bounce-up" data-toggle="modal" data-id="shop" data-target="#myModal">
+            <div class="portfolio-item subject" data-toggle="modal" data-target="#exampleModal">
+              <figure class="project-excerpt-image">
+                <img class="img-fluid" src="img/o-shop.jpg" alt="image1" class="excerpt-image">
+              </figure>
+
+              <div class="project-excerpt-caption">
+                <div class="project-excerpt-caption-inner">
+                    <div class="project-excerpt-title">
+                        <h3 class="project-excerpt-title-inner">O-shop</h3>
+                    </div>
+                    <div class="tags project-excerpt-tags"><span class="project-excerpt-tags-inner">An eCommerce website buiid for store transections</span></div>
+                </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://oshop-2d115.firebaseapp.com/" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>O-shop</h2>
-                  <p class="mb-0">An eCommerce website buiid for store transections</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/o-shop.jpg" alt="">
-            </a>
           </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://e-traker.firebaseapp.com/" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <h3>eTraker</h3>
-                  <p class="mb-0">A web application for traking the event path. using Mapbox, GpxData, Leaflet</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/traker.jpg" alt="">
-            </a>
+          <div class="col-lg-6 animation-element slide-left" data-toggle="modal" data-id="bliss" data-target="#myModal">
+              <div class="portfolio-item">
+                <figure class="project-excerpt-image">
+                  <img class="img-fluid" src="img/bliss.jpg" alt="image1" class="excerpt-image">
+                </figure>
+  
+                <div class="project-excerpt-caption">
+                  <div class="project-excerpt-caption-inner">
+                      <div class="project-excerpt-title">
+                          <h3 class="project-excerpt-title-inner">Bliss Resturant</h3>
+                      </div>
+                      <div class="tags project-excerpt-tags"><span class="project-excerpt-tags-inner">A website for a famous Italian resturant!</span></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+          <div class="col-lg-6 animation-element bounce-up" data-toggle="modal" data-id="traker" data-target="#myModal">
+            <div class="portfolio-item subject">
+              <figure class="project-excerpt-image">
+                <img class="img-fluid" src="img/traker.jpg" alt="image1" class="excerpt-image">
+              </figure>
+
+              <div class="project-excerpt-caption">
+                <div class="project-excerpt-caption-inner">
+                    <div class="project-excerpt-title">
+                        <h3 class="project-excerpt-title-inner">e-Traker</h3>
+                    </div>
+                    <div class="tags project-excerpt-tags"><span class="project-excerpt-tags-inner">A web application for traking the event path. using Mapbox, GpxData, Leaflet</span></div>
+                </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>South Pole</h2>
-                  <p class="mb-0">The Story of South Pole -an infomative website.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/south.jpg" alt="">
-            </a>
           </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://brifanbelly.github.io/lawyers-beauro/" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Lawyers Bureau</h2>
-                  <p class="mb-0">A Lawyers Bueeau website!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/buro.jpg" alt="">
-            </a>
+          <div class="col-lg-6 animation-element slide-left" data-toggle="modal" data-id="movies" data-target="#myModal">
+              <div class="portfolio-item">
+                <figure class="project-excerpt-image">
+                  <img class="img-fluid" src="img/movies.jpg" alt="image1" class="excerpt-image">
+                </figure>
+  
+                <div class="project-excerpt-caption">
+                  <div class="project-excerpt-caption-inner">
+                      <div class="project-excerpt-title">
+                          <h3 class="project-excerpt-title-inner">Movies Api</h3>
+                      </div>
+                      <div class="tags project-excerpt-tags"><span class="project-excerpt-tags-inner">An AngularJS Project consumes theMoviedb Api</span></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+          <div class="col-lg-6 animation-element bounce-up" data-toggle="modal" data-id="buro" data-target="#myModal">
+            <div class="portfolio-item subject">
+              <figure class="project-excerpt-image">
+                <img class="img-fluid" src="img/buro.jpg" alt="image1" class="excerpt-image">
+              </figure>
+
+              <div class="project-excerpt-caption">
+                <div class="project-excerpt-caption-inner">
+                    <div class="project-excerpt-title">
+                        <h3 class="project-excerpt-title-inner">Lawyers Bureau</h3>
+                    </div>
+                    <div class="tags project-excerpt-tags"><span class="project-excerpt-tags-inner">A Lawyers Bueeau website!</span></div>
+                </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://brifanbelly.github.io/bliss_resturant/" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Bliss Resturant</h2>
-                  <p class="mb-0"> A website for a famous Italian resturant!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/bliss.jpg" alt="">
-            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="modal-image-wr">
+                <img src="" alt="">
+              </div>
+              <div class="modal-content">
+                <div class="langs"></div>
+                <u><i> <center><div class="url"> <a></a> </div></center> </i></u>
+                <br><br>
+                <div class="modal__about"><p></p></div>
+                <div class="work"><ul></ul></div>
+              </div>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer"><p></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <section id="skills" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+          
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'JavaScript')" id="defaultOpen">JavaScript</button>
+              <button class="tablinks" onclick="openCity(event, 'htcss')">HTML & CSS</button>
+              <button class="tablinks" onclick="openCity(event, 'backend')">Backend</button>
+              <button class="tablinks" onclick="openCity(event, 'tools')">Development softwares</button>
+              <button class="tablinks" onclick="openCity(event, 'devOps')">Dev Ops</button>
+            </div>
+
+            <div id="JavaScript" class="tabcontent">
+              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <h3>JavaScript</h3>
+              <ul class="list">
+                <li class="list__element">Proficient in <b>ES6</b> and have more than three years experience writing vanilla javascript</li>
+                <li class="list__element">Worked with frameworks like <b>jQuery</b>, Angular.js, Angualr2.x higher, Bable compilaer, Modernizr, polyfills</li>
+                <li class="list__element">Working with build tools such as grunt, WebPack, gulp and also configured the initail setup for the project</li>
+                <li class="list__element">Performed Client-side form <b>validation</b>, animations, routing, Authentication Using <b>JWT</b> Bearer token Authentication</li>
+                <li class="list__element">Integrated with Google tools like <b> Google Analytics</b>, Google maps, Google Calender, firebase </li>
+              </ul>
+            </div>
+
+            <div id="htcss" class="tabcontent">
+              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <h3>HTML and CSS</h3>
+              <ul class="list">
+                <li class="list__element">Use of <b>SASS</b> css preprocessor and have been recently following <b>BEM</b> naming  Convention.</li>
+                <li class="list__element">Using 7:1 SASS file Architecture  and organising the code for more readability</li>
+                <li class="list__element">Work with HTML sementics and Knowledge of accessability</li>
+                <li class="list__element">Experience in css frameworks such as <b>Bootstrap4</b>, sementic UI, <b>Flex-box</b> Layout, css grids</li>
+              </ul>  
+            </div>
+
+            <div id="backend" class="tabcontent">
+              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <h3>Backend Technologies</h3>
+              <ul class="list">
+                <li class="list__element">Working Knowledge of <b>PHP</b> and frameworks like Laravel, Zend, <b>CMS</b> system like Drupal, Wordpress</li>
+                <li class="list__element">Writing backend code in <b>Node.js</b> and implement <b>Socket.io</b> for chat applications</li>
+                <li class="list__element">Some Knowledge of dotnet and dotnet core, Have done a working project consuming backend RestApi's</li>
+                <li class="list__element">Good Experience working with <b>RestFull API's</b> and SPA Applications </li>
+              </ul>
+            </div>
+
+            <div id="tools" class="tabcontent">
+              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <h3>Web Dev Software</h3>
+              <ul class="list">
+                <li class="list__element">Configure WebPack, gulp during the initial stages of the project</li>
+                <li class="list__element">Experience with IDE's like Visual Studio, <b>Web Storm</b>, VS Code</li>
+                <li class="list__element">Use of online Google tools like <b>Google Analytics</b>, Google maps, Google Calender, firebase for collecting site information</li>
+                <li class="list__element">Familier with the concept of docker, docker-imager, docker container registery</li>
+              </ul>
+            </div>
+
+            <div id="devOps" class="tabcontent">
+              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <h3>Dev Ops & Hosting</h3>
+              <ul class="list">
+                <li class="list__element">Familier with Tools like Microsoft VSTS, Stash, Jira, Trello </li>
+                <li class="list__element">used <b>Notion</b> to document the project</li>
+                <li class="list__element">Experience Hosting on <b>Azure</b> platform and also other platforms like RedHat(OpenShift), Firebase, Heroku</li>
+                <li class="list__element">using <b>Git,</b> <b>Bitbucket,</b> and other version control tools</li>
+                <li class="list__element">Use of NoSql Daatabase services like <b>M-Lab</b></li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
@@ -228,7 +374,7 @@
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
      <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="js/grayscale.js"></script>
     <script src="js/snow.js"></script>
 
   </body>
