@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "../startbootstrap-grayscale-gh-pages",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
